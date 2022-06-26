@@ -42,11 +42,11 @@ Shortcut for the command `flutter test`
 
 ### flu format
 
-Shortcut for the command `flutter format .`
+Shortcut for the command `flutter format .` (just analyzes, but does not fix)
 
-### flu format
+### flu format fix
 
-Shortcut for the command `flutter format --fix .`
+Shortcut for the command `flutter format --fix .` (analyzes and fixes problems)
 
 ### flu runner
 

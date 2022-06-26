@@ -28,31 +28,31 @@ source ~/flu.sh
 Now close your terminal window and open it again.
 Now you should just be able to call the commands in the document:
 
-### flutter pub get
-```bash
-flu get
-```
+### flu get
 
-### flutter pub run build_runner --delete-conflicting-outputs
-```bash
-flu runner
-```
+Shortcut for the command `flutter pub get`
 
-### flutter pub run build_runner watch --delete-conflicting-outputs
-```bash
-flu runner-watch
-```
+### flu runner
 
-### Specific to our environment
+Shortcut for the command `flutter pub run build_runner --delete-conflicting-outputs`
 
-May not apply to your setup.
+### flu runner watch
 
-#### flutter run  -t lib/widgetbook.widgetbook.dart -d chrome --web-renderer html --
-```bash
-flu build-widgetbook
-```
+Shortcut for the command `flutter pub run build_runner watch --delete-conflicting-outputs`
+
 
 ## Further reading
 
 The script was created based on the following article: (with more explanation on syntax and workings)
 https://dev.to/eddeee888/how-to-write-a-bash-shortcut-script-to-enhance-your-terminal-experience-5898
+
+<hr />
+
+### Specific commands to our environment
+
+May not apply to your setup.
+
+#### flu widgetbook-build
+
+Shortcut for the command `flutter run  -t lib/widgetbook.widgetbook.dart -d chrome --web-renderer html --`
+

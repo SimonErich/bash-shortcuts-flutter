@@ -27,7 +27,7 @@ function flu() {
     case $2 in
     "")
       echo "Checking flutter project code formatting"
-      flutter format --fix .
+      flutter format .
       return 0
       ;;
 

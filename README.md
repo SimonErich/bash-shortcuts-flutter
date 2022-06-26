@@ -32,6 +32,22 @@ Now you should just be able to call the commands in the document:
 
 Shortcut for the command `flutter pub get`
 
+### flu analyze
+
+Shortcut for the command `flutter analyze`
+
+### flu test
+
+Shortcut for the command `flutter test`
+
+### flu format
+
+Shortcut for the command `flutter format .`
+
+### flu format
+
+Shortcut for the command `flutter format --fix .`
+
 ### flu runner
 
 Shortcut for the command `flutter pub run build_runner --delete-conflicting-outputs`

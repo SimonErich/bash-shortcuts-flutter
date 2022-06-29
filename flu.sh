@@ -81,6 +81,26 @@ function flu() {
     ;;
   esac
 
-  echo "\nERROR - Invalid command\n"
+  GREEN_FG='\033[32m'
+  BOLD='\033[1;97m'
+  TITLE='\033[1;42;97m'
+  NC='\033[0m' # No Color
+
+  usage="
+  ${TITLE} $(basename "$0") [command] -- small bash helper to abbreviate verbose flutter commands. ${NC}
+
+  ${BOLD}[command]:${NC}
+    ${GREEN_FG}get                  ${NC}flutter pub get
+    ${GREEN_FG}analyze              ${NC}flutter analyze
+    ${GREEN_FG}test                 ${NC}flutter test
+    ${GREEN_FG}format               ${NC}flutter format . (just analyzes, but does not fix)
+    ${GREEN_FG}format fix           ${NC}flutter format --fix . (analyzes and fixes problems)
+    ${GREEN_FG}runner               ${NC}flutter pub run build_runner --delete-conflicting-outputs
+    ${GREEN_FG}runner watch         ${NC}flutter pub run build_runner watch --delete-conflicting-outputs
+
+  ${BOLD}specific to our environment:
+    ${GREEN_FG}build-widgetbook     ${NC}flutter run -t lib/widgetbook.widgetbook.dart -d chrome --web-renderer html --\n"
+
+  echo "$usage"
   return 1
 }

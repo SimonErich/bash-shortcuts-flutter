@@ -1,6 +1,6 @@
-# bash-shortcuts-flutter
+# flu.sh
 
-Just a helper bash repo for myself to not have to search and type all of these long flutter commands. 
+Just a helper bash repo for myself to not have to search and type all of these long flutter commands.
 This is just meant as inspiration and should not be copied 1:1, because there might be changes.
 
 Everything should work fine on Unix and OSX. Maybe it works in Windows as well, but not sure about it.
@@ -15,11 +15,18 @@ wget https://github.com/SimonErich/bash-shortcuts-flutter/blob/main/flu.sh ~/flu
 chmod +x ~/flu.sh
 ```
 
+or using cURL:
+
+```bash
+curl -L https://raw.githubusercontent.com/SimonErich/bash-shortcuts-flutter/main/flu.sh -o ~/flu.sh
+chmod +x ~/flu.sh
+```
+
 ## Linux & OSX
 
 Add it to your profile file. (`~/.zshrc` or `~/.bashrc` - depending on your shell):
 
-```
+```bash
 source ~/flu.sh
 ```
 
@@ -56,13 +63,12 @@ Shortcut for the command `flutter pub run build_runner --delete-conflicting-outp
 
 Shortcut for the command `flutter pub run build_runner watch --delete-conflicting-outputs`
 
-
 ## Further reading
 
 The script was created based on the following article: (with more explanation on syntax and workings)
-https://dev.to/eddeee888/how-to-write-a-bash-shortcut-script-to-enhance-your-terminal-experience-5898
+[https://dev.to/eddeee888/how-to-write-a-bash-shortcut-script-to-enhance-your-terminal-experience-5898](https://dev.to/eddeee888/how-to-write-a-bash-shortcut-script-to-enhance-your-terminal-experience-5898)
 
-<hr />
+---
 
 ### Specific commands to our environment
 
@@ -71,4 +77,3 @@ May not apply to your setup.
 #### flu widgetbook-build
 
 Shortcut for the command `flutter run  -t lib/widgetbook.widgetbook.dart -d chrome --web-renderer html --`
-

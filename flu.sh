@@ -61,7 +61,7 @@ function flu() {
     case $2 in
     "")
       echo "Running flutter build runner once"
-      flutter pub run build_runner --delete-conflicting-outputs
+      flutter pub run build_runner build --delete-conflicting-outputs
       return 0
       ;;
     "watch")
